@@ -1,31 +1,37 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
 
-int main() {
-    cv::Mat image = cv::imread("car-967387_640.png");
-    if (image.empty()) {
-        std::cerr << "Could not open or find the image" << std::endl;
+int main()
+{
+    // Step 1: Create a VideoCapture object to open the default camera
+    cv::VideoCapture cap(0); // 0 for default camera, or use another number for different cameras
+
+    // Step 2: Check if the camera opened successfully
+    if (!cap.isOpened())
+    {
+        std::cerr << "Error: Could not open the camera" << std::endl;
         return -1;
     }
 
-     // Apply Gaussian blur
-    cv::Mat blurredImage;
-    cv::GaussianBlur(image, blurredImage, cv::Size(15, 15), 0);
+    // Step 3: Create a window to display the captured image (optional)
+    cv::namedWindow("Captured Image", cv::WINDOW_AUTOSIZE);
 
-    // Convert to grayscale
-    cv::Mat grayImage;
-    cv::cvtColor(image, grayImage, cv::COLOR_BGR2GRAY);
+    // Step 4: Capture a frame from the camera
+    cv::Mat frame;
+    cap >> frame; // Capture a single frame
 
-     // Display the original and blurred images
-    cv::namedWindow("Original Image", cv::WINDOW_AUTOSIZE);
-    cv::imshow("Original Image", image);
+    // Step 5: Display the captured frame (optional)
+    cv::imshow("Captured Image", frame);
 
-    cv::namedWindow("Blurred Image", cv::WINDOW_AUTOSIZE);
-    cv::imshow("Blurred Image", blurredImage);
+    // Step 6: Save the captured frame to a file (optional)
+    cv::imwrite("captured_image.jpg", frame);
 
-    cv::namedWindow("Grayscale Image", cv::WINDOW_AUTOSIZE);
-    cv::imshow("Grayscale Image", grayImage);
-
+    // Wait for a key press indefinitely
     cv::waitKey(0);
+
+    // Step 7: Release the VideoCapture object and close any open windows
+    cap.release();
+    cv::destroyAllWindows();
+
     return 0;
 }
