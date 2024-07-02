@@ -1,0 +1,3 @@
+/Users/rexchen/Workspace/OpenCV_App/CMakeFiles/MyOpenCVProject.dir
+/Users/rexchen/Workspace/OpenCV_App/CMakeFiles/edit_cache.dir
+/Users/rexchen/Workspace/OpenCV_App/CMakeFiles/rebuild_cache.dir
