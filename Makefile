@@ -129,29 +129,29 @@ MyOpenCVProject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyOpenCVProject.dir/build.make CMakeFiles/MyOpenCVProject.dir/build
 .PHONY : MyOpenCVProject/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+wxmain.o: wxmain.cpp.o
+.PHONY : wxmain.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyOpenCVProject.dir/build.make CMakeFiles/MyOpenCVProject.dir/main.cpp.o
-.PHONY : main.cpp.o
+wxmain.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyOpenCVProject.dir/build.make CMakeFiles/MyOpenCVProject.dir/wxmain.cpp.o
+.PHONY : wxmain.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+wxmain.i: wxmain.cpp.i
+.PHONY : wxmain.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyOpenCVProject.dir/build.make CMakeFiles/MyOpenCVProject.dir/main.cpp.i
-.PHONY : main.cpp.i
+wxmain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyOpenCVProject.dir/build.make CMakeFiles/MyOpenCVProject.dir/wxmain.cpp.i
+.PHONY : wxmain.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+wxmain.s: wxmain.cpp.s
+.PHONY : wxmain.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyOpenCVProject.dir/build.make CMakeFiles/MyOpenCVProject.dir/main.cpp.s
-.PHONY : main.cpp.s
+wxmain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyOpenCVProject.dir/build.make CMakeFiles/MyOpenCVProject.dir/wxmain.cpp.s
+.PHONY : wxmain.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MyOpenCVProject"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... wxmain.o"
+	@echo "... wxmain.i"
+	@echo "... wxmain.s"
 .PHONY : help
 
 

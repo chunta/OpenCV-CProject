@@ -69,28 +69,28 @@ include CMakeFiles/MyOpenCVProject.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/MyOpenCVProject.dir/flags.make
 
-CMakeFiles/MyOpenCVProject.dir/main.cpp.o: CMakeFiles/MyOpenCVProject.dir/flags.make
-CMakeFiles/MyOpenCVProject.dir/main.cpp.o: main.cpp
-CMakeFiles/MyOpenCVProject.dir/main.cpp.o: CMakeFiles/MyOpenCVProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/rexchen/Workspace/OpenCV_App/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyOpenCVProject.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyOpenCVProject.dir/main.cpp.o -MF CMakeFiles/MyOpenCVProject.dir/main.cpp.o.d -o CMakeFiles/MyOpenCVProject.dir/main.cpp.o -c /Users/rexchen/Workspace/OpenCV_App/main.cpp
+CMakeFiles/MyOpenCVProject.dir/wxmain.cpp.o: CMakeFiles/MyOpenCVProject.dir/flags.make
+CMakeFiles/MyOpenCVProject.dir/wxmain.cpp.o: wxmain.cpp
+CMakeFiles/MyOpenCVProject.dir/wxmain.cpp.o: CMakeFiles/MyOpenCVProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/rexchen/Workspace/OpenCV_App/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyOpenCVProject.dir/wxmain.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyOpenCVProject.dir/wxmain.cpp.o -MF CMakeFiles/MyOpenCVProject.dir/wxmain.cpp.o.d -o CMakeFiles/MyOpenCVProject.dir/wxmain.cpp.o -c /Users/rexchen/Workspace/OpenCV_App/wxmain.cpp
 
-CMakeFiles/MyOpenCVProject.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyOpenCVProject.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/rexchen/Workspace/OpenCV_App/main.cpp > CMakeFiles/MyOpenCVProject.dir/main.cpp.i
+CMakeFiles/MyOpenCVProject.dir/wxmain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyOpenCVProject.dir/wxmain.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/rexchen/Workspace/OpenCV_App/wxmain.cpp > CMakeFiles/MyOpenCVProject.dir/wxmain.cpp.i
 
-CMakeFiles/MyOpenCVProject.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyOpenCVProject.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/rexchen/Workspace/OpenCV_App/main.cpp -o CMakeFiles/MyOpenCVProject.dir/main.cpp.s
+CMakeFiles/MyOpenCVProject.dir/wxmain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyOpenCVProject.dir/wxmain.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/rexchen/Workspace/OpenCV_App/wxmain.cpp -o CMakeFiles/MyOpenCVProject.dir/wxmain.cpp.s
 
 # Object files for target MyOpenCVProject
 MyOpenCVProject_OBJECTS = \
-"CMakeFiles/MyOpenCVProject.dir/main.cpp.o"
+"CMakeFiles/MyOpenCVProject.dir/wxmain.cpp.o"
 
 # External object files for target MyOpenCVProject
 MyOpenCVProject_EXTERNAL_OBJECTS =
 
-MyOpenCVProject: CMakeFiles/MyOpenCVProject.dir/main.cpp.o
+MyOpenCVProject: CMakeFiles/MyOpenCVProject.dir/wxmain.cpp.o
 MyOpenCVProject: CMakeFiles/MyOpenCVProject.dir/build.make
 MyOpenCVProject: /usr/local/lib/libopencv_gapi.4.9.0.dylib
 MyOpenCVProject: /usr/local/lib/libopencv_stitching.4.9.0.dylib

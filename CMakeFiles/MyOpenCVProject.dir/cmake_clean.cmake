@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/MyOpenCVProject.dir/main.cpp.o"
-  "CMakeFiles/MyOpenCVProject.dir/main.cpp.o.d"
+  "CMakeFiles/MyOpenCVProject.dir/wxmain.cpp.o"
+  "CMakeFiles/MyOpenCVProject.dir/wxmain.cpp.o.d"
   "MyOpenCVProject"
   "MyOpenCVProject.pdb"
 )
