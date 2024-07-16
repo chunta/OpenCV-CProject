@@ -1,14 +1,17 @@
-cmake_minimum_required(VERSION 3.10)
-project(MyOpenCVProject)
+cmake_minimum_required(VERSION 3.1)
+project(MyQtApp)
 
-# Find OpenCV package
-find_package(OpenCV REQUIRED)
+# Find the necessary Qt packages
+find_package(Qt6 REQUIRED COMPONENTS Widgets Core)
 
-# Include OpenCV headers
-include_directories(${OpenCV_INCLUDE_DIRS})
+if(Qt6_FOUND)
+    message(STATUS "Found Qt6: ${Qt6_VERSION}")
+else()
+    message(FATAL_ERROR "Qt6 not found")
+endif()
 
 # Add your executable
-add_executable(MyOpenCVProject main.cpp)
+add_executable(MyApp main.cpp)
 
-# Link OpenCV libraries
-target_link_libraries(MyOpenCVProject ${OpenCV_LIBS})
+# Use the appropriate modules from Qt
+target_link_libraries(MyApp PRIVATE Qt6::Widgets Qt6::Widgets)
